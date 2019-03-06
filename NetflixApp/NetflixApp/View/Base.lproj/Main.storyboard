@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NetflixApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IN0-vM-c15" userLabel="HeaderView">
+                                <rect key="frame" x="0.0" y="44" width="375" height="60"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="del-4j-Esd" userLabel="ProgressView">
+                                        <rect key="frame" x="0.0" y="50" width="15" height="10"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.20888548682465036" green="0.81820757772020725" blue="0.1606125137281991" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="XX/10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7bV-fT-mno">
+                                        <rect key="frame" x="24" y="20" width="57" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: 999" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4es-MW-EyC">
+                                        <rect key="frame" x="256" y="18" width="101" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.85822134067357514" green="0.8439425217281169" blue="0.6615032745592011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="BWF-HF-2N7"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="0ey-st-S8O">
+                                <rect key="frame" x="0.0" y="104" width="375" height="674"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GXd-PL-TN4" userLabel="QuestionView">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="337"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What show is Lil Sebastion from?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2qD-U9-F8G" userLabel="Question">
+                                                <rect key="frame" x="15" y="305.66666666666669" width="345" height="24"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LilSebastion" translatesAutoresizingMaskIntoConstraints="NO" id="S96-IL-nuQ" userLabel="Photo">
+                                                <rect key="frame" x="15" y="15" width="345" height="250"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="250" id="RTO-at-67l"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="250" id="kib-e8-GfJ"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="2qD-U9-F8G" secondAttribute="trailing" constant="15" id="0L9-Fg-Vde"/>
+                                            <constraint firstItem="S96-IL-nuQ" firstAttribute="top" secondItem="GXd-PL-TN4" secondAttribute="top" constant="15" id="2a6-O7-LvL"/>
+                                            <constraint firstItem="S96-IL-nuQ" firstAttribute="leading" secondItem="GXd-PL-TN4" secondAttribute="leading" constant="15" id="AdM-H7-GA1"/>
+                                            <constraint firstItem="2qD-U9-F8G" firstAttribute="centerX" secondItem="GXd-PL-TN4" secondAttribute="centerX" id="LAg-kT-ajy"/>
+                                            <constraint firstAttribute="trailing" secondItem="S96-IL-nuQ" secondAttribute="trailing" constant="15" id="gyP-bl-dXj"/>
+                                            <constraint firstAttribute="bottom" secondItem="2qD-U9-F8G" secondAttribute="bottom" constant="7.5" id="hkI-Mf-Ea1"/>
+                                            <constraint firstItem="2qD-U9-F8G" firstAttribute="leading" secondItem="GXd-PL-TN4" secondAttribute="leading" constant="15" id="ymW-7Q-ZkI"/>
+                                            <constraint firstItem="S96-IL-nuQ" firstAttribute="centerX" secondItem="GXd-PL-TN4" secondAttribute="centerX" id="zMh-cq-lq8"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wb2-of-VoX" userLabel="ButtonsView">
+                                        <rect key="frame" x="0.0" y="337" width="375" height="337"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="4by-lK-xFb">
+                                                <rect key="frame" x="15" y="7.6666666666666856" width="345" height="314.33333333333331"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lbc-Px-3c8">
+                                                        <rect key="frame" x="0.0" y="0.0" width="345" height="65"/>
+                                                        <color key="backgroundColor" red="0.8582213407" green="0.84394252169999995" blue="0.66150327460000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                        <state key="normal" title="A. Friends">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="answerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z4z-az-mc1"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fNV-Ka-TxF">
+                                                        <rect key="frame" x="0.0" y="82.999999999999943" width="345" height="65"/>
+                                                        <color key="backgroundColor" red="0.8582213407" green="0.84394252169999995" blue="0.66150327460000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                        <state key="normal" title="B. The Office">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="answerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Adz-Iu-mbL"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EAa-C1-BWy">
+                                                        <rect key="frame" x="0.0" y="165.99999999999994" width="345" height="65.333333333333314"/>
+                                                        <color key="backgroundColor" red="0.8582213407" green="0.84394252169999995" blue="0.66150327460000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                        <state key="normal" title="C. Parks and Rec">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="answerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AoH-P4-MOj"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lE1-Lr-udx">
+                                                        <rect key="frame" x="0.0" y="249.33333333333331" width="345" height="65"/>
+                                                        <color key="backgroundColor" red="0.8582213407" green="0.84394252169999995" blue="0.66150327460000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                        <state key="normal" title="D. That 70s Show">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="answerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lGx-5L-11R"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="4by-lK-xFb" secondAttribute="bottom" constant="15" id="B8E-Iu-V7j"/>
+                                            <constraint firstItem="4by-lK-xFb" firstAttribute="leading" secondItem="wb2-of-VoX" secondAttribute="leading" constant="15" id="BrD-YX-NwY"/>
+                                            <constraint firstItem="4by-lK-xFb" firstAttribute="centerX" secondItem="wb2-of-VoX" secondAttribute="centerX" id="bxQ-es-0Cr"/>
+                                            <constraint firstItem="4by-lK-xFb" firstAttribute="top" secondItem="wb2-of-VoX" secondAttribute="top" constant="7.5" id="gFc-WI-1k5"/>
+                                            <constraint firstAttribute="trailing" secondItem="4by-lK-xFb" secondAttribute="trailing" constant="15" id="vLa-Uo-5jy"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0ey-st-S8O" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="65v-Wh-50e"/>
+                            <constraint firstItem="IN0-vM-c15" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="6lr-Ln-pGx"/>
+                            <constraint firstItem="IN0-vM-c15" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DGy-Bb-9fJ"/>
+                            <constraint firstItem="0ey-st-S8O" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GTH-I7-kBW"/>
+                            <constraint firstItem="0ey-st-S8O" firstAttribute="top" secondItem="IN0-vM-c15" secondAttribute="bottom" id="Mg4-jE-wrH"/>
+                            <constraint firstItem="IN0-vM-c15" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="QPh-o4-mFQ"/>
+                            <constraint firstItem="0ey-st-S8O" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dDF-qe-jFU"/>
+                            <constraint firstItem="IN0-vM-c15" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lKc-ey-PQy"/>
+                            <constraint firstItem="0ey-st-S8O" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nnE-M1-3Uy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0ey-st-S8O" secondAttribute="bottom" id="w8U-wg-dBU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="optionA" destination="Lbc-Px-3c8" id="kdi-2T-3zz"/>
+                        <outlet property="optionB" destination="fNV-Ka-TxF" id="YoX-YI-QUa"/>
+                        <outlet property="optionC" destination="EAa-C1-BWy" id="zTe-At-zaB"/>
+                        <outlet property="optionD" destination="lE1-Lr-udx" id="t6a-3f-Jti"/>
+                        <outlet property="photoView" destination="S96-IL-nuQ" id="sqI-YM-XN1"/>
+                        <outlet property="progressView" destination="del-4j-Esd" id="cFB-28-kGz"/>
+                        <outlet property="questionCounter" destination="7bV-fT-mno" id="PG6-Ex-9qT"/>
+                        <outlet property="questionLabel" destination="2qD-U9-F8G" id="Iwl-CF-sQd"/>
+                        <outlet property="scoreLabel" destination="4es-MW-EyC" id="c2b-TD-90J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="132.26600985221674"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LilSebastion" width="550" height="550"/>
+    </resources>
+</document>
